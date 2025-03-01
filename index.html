@@ -43,24 +43,24 @@
 
         
         <div class="flex items-center gap-10">
-          <div class="flex gap-2 items-center bg-bg text-text px-3 py-1 rounded-full">
-            <img src="./assets/checkbox.png" alt="">
-            <p class="font-bold text-3xl">23</p>
+          <div  class="flex gap-2 items-center bg-bg text-text px-3 py-1 rounded-full">
+            <img id= src="./assets/checkbox.png" alt="">
+            <p id="tasksCompleted" class="font-bold text-3xl">23</p>
 
           </div>
           
-          <div class="  flex items-center justify-center">
-            <img class="bg-bg rounded-full w-10 h-10 " src="./assets/theme-btn.png" alt="Theme Button">
+          <div class=" flex items-center justify-center">
+            <img id="bgColour"  class="bg-bg rounded-full w-10 h-10 " src="./assets/theme-btn.png" alt="Theme Button">
           </div>
         </div>
       </div>
     </section>
 
 
-    <div class="grid grid-cols-5">
+    <div class="grid grid-cols-5 gap-6">
       <!-- Hero -->
-     <div class="bg-white rounded-xl col-span-4">
-      <!-- Task,Discover and Calendar -->
+      <div class="col-span-4 bg-white rounded-xl">
+        <!-- Task,Discover and Calendar -->
       <div class="grid grid-cols-5">
         <!-- Task -->
         <div class="flex items-center h-32 bg-bg mx-6 my-6 rounded-xl">
@@ -89,8 +89,8 @@
             <img src="./assets/calender.png" alt="">
           </div>
           <div>
-            <p class="font-medium">Task Assigned</p>
-            <p class="font-bold text-3xl">6</p>
+            <p class="font-medium text-lg">Task Assigned</p>
+            <p id="taskRemaining" class="font-bold text-3xl">6</p>
 
           </div>
           
@@ -187,7 +187,7 @@
         <!-- Glassdoar -->
          <div class="bg-bg h-80 m-9 rounded-2xl">
           <!-- GlassDoar Texts -->
-           <div class="p-6">
+          <div class="p-6">
             <h3 class="bg-white p-4 w-28 h-10 flex items-center rounded-lg">Glassdoar</h3>
             <p class="font-medium text-2xl my-4 text-text">Improve Job searching </p>
             <p class="bg-white p-4 text-gray-500 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
@@ -201,21 +201,38 @@
 
            </div>
          </div>
+         
 
 
       </div>
 
-     </div>
+        
+      </div>
+      <!-- Activity -->
+       <div class="bg-white rounded-2xl">
+        <div class="flex justify-center gap-2 pt-6 pb-4s">
+          <img src="./assets/activity.png" alt="">
+          <p class="font-medium text-xl">Activity Log</p>
+ 
+        </div>
+        <div class="flex justify-center my-3">
+          <button class="btn bg-accent text-white">Check History</button>
+        </div>
+        
+       </div>
+      
+        
+        
+        
+        
 
+      
+     </div>
+     
 
 
 
   </div>
-    <!-- Activity Task -->
-     <div>
-
-     </div>
-    </div>
     
 
 
