@@ -11,25 +11,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Tailwind Customize -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            text:"#00303C",
+            bg:"#F4F7FF"
+          }
+        }
+      }
+    }
+  </script>
   
 
 
 </head>
-<body class="mx-auto">
-  <!-- NavBar -->
-   <section>
-    <div class="navbar bg-base-100 ">
-      <div>
-        <img src="./assets/logo.png" alt="">
-      </div>
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl">DevBoard</a>
-      </div>
-      <div class="flex-none">
+<body class="bg-bg">
+  <div class="container mx-auto">
+    <!-- NavBar -->
+    <section class="my-6">
+      <div class="navbar bg-base-100 px-6 rounded-2xl flex justify-between items-center">
         
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="Logo">
+          <a class="text-4xl text-text font-bold">DevBoard</a>
+        </div>
+
+        
+        <div class="flex items-center gap-10">
+          <div class="flex gap-2 items-center bg-bg text-text px-3 py-1 rounded-full">
+            <img src="./assets/checkbox.png" alt="">
+            <p class="font-bold text-3xl">23</p>
+
+          </div>
+          
+          <div class="  flex items-center justify-center">
+            <img class="bg-bg rounded-full w-10 h-10 " src="./assets/theme-btn.png" alt="Theme Button">
+          </div>
+        </div>
       </div>
-    </div>
-   </section>
+    </section>
+  </div>
+
+  
 
   <script src="./Scripts/main.js"></script>
 </body>
