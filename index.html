@@ -63,11 +63,11 @@
         <!-- Task,Discover and Calendar -->
       <div class="grid grid-cols-4">
         <!-- Task -->
-        <div class="flex items-center h-32 bg-bg mx-6 my-6 rounded-xl">
+        <div class="flex justify-center items-center h-32 bg-bg mx-6 my-6 rounded-xl">
           <div class=" bg-white rounded-full p-5">
             <img src="./assets/checkbox.png" alt="">
           </div>
-          <div>
+          <div class="">
             <p class="font-medium text-center">Task Assigned</p>
             <p id="taskRemaining" class="font-bold text-3xl">6</p>
 
@@ -89,8 +89,8 @@
             <img src="./assets/calender.png" alt="">
           </div>
           <div class="">
-            <p class="font-medium text-lg">Wed</p>
-            <p class="font-bold text-2xl">25,2025</p>
+            <p id="day" class="font-medium text-lg">Wed</p>
+            <p id="month" class="font-bold text-2xl">25,2025</p>
 
           </div>
           
@@ -105,11 +105,11 @@
            <div class="p-6">
             <h3 class="bg-white p-4 w-28 h-10 flex items-center rounded-lg font-normal">ShopEase</h3>
             <p class="font-medium text-2xl my-4 text-text">Fix Mobile Button Issue </p>
-            <p class="bg-white p-4 text-gray-500 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+            <p class="bg-white p-4 text-gray-500 rounded-lg ">Debug using Chrome DevTools, check for overlapping</p>
            </div>
            <!-- Deadline and Button -->
-           <div class='flex justify-between p-6'>
-            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+           <div class='flex justify-between p-6 '>
+            <p class="font-semibold text-lg ">Deadline <br>21 March,2024</p>
             <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
@@ -218,7 +218,7 @@
         <div class="flex justify-center my-3">
           <button id="history" class="btn bg-accent text-white">Check History</button>
         </div>
-        <div id="activity" class="bg-bg text-center mx-3 rounded-lg p-3"></div>
+        <div id="activity" class="bg-bg text-center mx-3 rounded-lg p-3 font-semibold"></div>
         
        </div>
       
@@ -240,5 +240,7 @@
   
 
   <script src="./Scripts/main.js"></script>
+  <script src="./Scripts/calendar.js"></script>
+  
 </body>
 </html>
