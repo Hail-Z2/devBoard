@@ -59,9 +59,9 @@
 
     <div class="grid grid-cols-5 gap-6">
       <!-- Hero -->
-      <div class="col-span-4 bg-white rounded-xl">
+      <div class="col-span-4 bg-white rounded-xl ">
         <!-- Task,Discover and Calendar -->
-      <div class="grid grid-cols-5">
+      <div class="grid grid-cols-4">
         <!-- Task -->
         <div class="flex items-center h-32 bg-bg mx-6 my-6 rounded-xl">
           <div class=" bg-white rounded-full p-5">
@@ -69,13 +69,13 @@
           </div>
           <div>
             <p class="font-medium text-center">Task Assigned</p>
-            <p class="font-bold text-3xl">6</p>
+            <p id="taskRemaining" class="font-bold text-3xl">6</p>
 
           </div>
           
         </div>
         <!-- Discover -->
-         <div class="flex justify-center items-center gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] h-32 mx-6 my-6 rounded-xl col-span-3">
+         <div class="flex justify-center items-center gap-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] h-32 mx-6 my-6 rounded-xl col-span-2">
           <div>
             <img src="./assets/board.png" alt="">
           </div>
@@ -88,9 +88,9 @@
           <div class=" bg-white rounded-full p-5">
             <img src="./assets/calender.png" alt="">
           </div>
-          <div>
-            <p class="font-medium text-lg">Task Assigned</p>
-            <p id="taskRemaining" class="font-bold text-3xl">6</p>
+          <div class="">
+            <p class="font-medium text-lg">Wed</p>
+            <p class="font-bold text-2xl">25,2025</p>
 
           </div>
           
@@ -98,7 +98,7 @@
 
       </div>
       <!-- Tasks Details -->
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-3 border border-dashed border-b-2">
         <!-- Shop Ease -->
          <div class="bg-bg h-80 m-9 rounded-2xl">
           <!-- Shop Ease Texts -->
@@ -109,8 +109,8 @@
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -126,8 +126,8 @@
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -143,8 +143,8 @@
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -160,8 +160,8 @@
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -171,14 +171,14 @@
          <div class="bg-bg h-80 m-9 rounded-2xl">
           <!-- Google LLC Texts -->
            <div class="p-6">
-            <h3 class="bg-white p-4 w-28 h-10 flex items-center rounded-lg">Google LLC</h3>
+            <h3 class="bg-white p-4 w-32 h-10 flex items-center rounded-lg">Google LLC</h3>
             <p class="font-medium text-2xl my-4 text-text">Integrate OpenAI API </p>
             <p class="bg-white p-4 text-gray-500 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -194,8 +194,8 @@
            </div>
            <!-- Deadline and Button -->
            <div class='flex justify-between p-6'>
-            <p class="font-medium text-lg">Deadline <br>21 March,2024</p>
-            <button class="btn bg-accent py-3 px-5 text-white font-medium">Completed</button>
+            <p class="font-semibold text-lg">Deadline <br>21 March,2024</p>
+            <button class="btn bg-accent py-3 px-5 text-white font-medium btn-complete">Completed</button>
           
             
 
@@ -216,8 +216,9 @@
  
         </div>
         <div class="flex justify-center my-3">
-          <button class="btn bg-accent text-white">Check History</button>
+          <button id="history" class="btn bg-accent text-white">Check History</button>
         </div>
+        <div id="activity" class="bg-bg text-center mx-3 rounded-lg p-3"></div>
         
        </div>
       
